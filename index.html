@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amri Karisma's Github Pages</title>
 </head>
-<body>
-    <div class="" id="app"></div>
+<bod style="background-color: black;">
+    <div class="" id="app">
+        <h1 style="color: white;"></h1>
+    </div>
     <script>
         var i = 0;
         var txt = `
@@ -30,7 +32,7 @@ Ada banyak variasi tulisan Lorem Ipsum yang tersedia, tapi kebanyakan sudah meng
         
         function typeWriter() {
           if (i < txt.length) {
-            document.getElementById("app").innerHTML += txt.charAt(i);
+            document.getElementById("app").querySelector('h1').innerHTML += txt.charAt(i);
             i++;
             setTimeout(typeWriter, speed);
           }
